@@ -1,6 +1,7 @@
 # Triage — 008-ai-assisted-initiative-management-adr-library
 
 Source: `work/inputs/008-ai-assisted-initiative-management-adr-library.zip`
+Source type: formal-design
 Applicable scaffolds: `tpl-decisions.md`, `tpl-doc-architecture.md`, `tpl-doc-spec.md`
 Pass 1 completed: 02.04.2026
 Status: AWAITING REVIEW

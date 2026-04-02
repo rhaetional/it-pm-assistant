@@ -49,6 +49,7 @@ Every triage file must open with this header, immediately followed by `---`:
 # Triage — {NNN-filename-stem}
 
 Source: `work/inputs/{NNN-filename}.md`
+Source type: formal-design | meeting-notes | brainstorm | inferred | other
 Applicable scaffolds: `tpl-doc-foo.md`, `tpl-doc-bar.md`
 Pass 1 completed: DD.MM.YYYY
 Status: AWAITING REVIEW
@@ -56,6 +57,7 @@ Status: AWAITING REVIEW
 
 - **Title** — use the full input filename stem (e.g. `001-Inferred-ServiceNow-Structure`).
 - **Source** — exact relative path to the input file; preserves provenance for Pass 2.
+- **Source type** — epistemic weight of the source. Use one of: `formal-design` (reviewed design doc), `meeting-notes`, `brainstorm`, `inferred` (derived, not explicit), `other`. Pass 2 uses this to annotate which source carries highest weight in an overlap cluster.
 - **Applicable scaffolds** — one or more `tpl-*.md` names from `framework/scaffold/`; determines which gap rows are relevant.
 - **Pass 1 completed** — date in DD.MM.YYYY format; add a `Pass 2 completed:` line in place when Pass 2 runs.
 - **Status** — `AWAITING REVIEW` until the human review checkpoint clears; then `REVIEWED` or `PASS 2 COMPLETE`.
@@ -98,8 +100,12 @@ Annotate the **Cross-input notes** column in the existing triage tables. Three
 checks, in order:
 
 **Overlap** — items across files that describe the same concept or requirement.
-Annotate each with `overlap: NNN#M` referencing every counterpart. Do not merge
-or resolve; flag only. The human reviewer decides which wording is canonical.
+Annotate each with `overlap: NNN#M` referencing every counterpart, and note the
+highest-weight source type in the cluster (e.g. `overlap: 003#4, 007#2 — highest
+weight: formal-design`). Do not merge or resolve; flag only. The human reviewer
+decides which wording is canonical. When 3 or more independent sources agree on
+an item, use `converged: NNN#M, NNN#M, …` instead of `overlap:` — this signals
+high-confidence items that are unlikely to need contested resolution.
 
 **Cross-file contradiction** — items across files that conflict. Annotate each
 with `X-conflicts: NNN#M`. Both rows get the annotation, cross-referenced.
@@ -110,8 +116,16 @@ scaffold section. If covered, annotate the D row: `covered by NNN#M`. A covered
 D row is informational; an uncovered D row is a genuine gap requiring resolution
 before drafting.
 
-Human reviews all triage tables (Pass 1 classifications + Pass 2 annotations)
-and confirms which items proceed to Pass 3.
+After completing the three checks, produce `work/triage/PASS2-SUMMARY.md`. This
+file is the review entry-point: it lists every unresolved overlap cluster (with
+a suggested canonical candidate — typically the most specific, best-sourced, or
+most constrained formulation), every `converged:` item (for fast confirmation),
+every cross-file contradiction, and every uncovered D gap. Label suggestions
+clearly as AI recommendations; all decisions remain with the human reviewer. The
+triage tables themselves stay purely descriptive.
+
+Human reviews `PASS2-SUMMARY.md` and all triage tables (Pass 1 classifications +
+Pass 2 annotations) and confirms which items proceed to Pass 3.
 
 ---
 

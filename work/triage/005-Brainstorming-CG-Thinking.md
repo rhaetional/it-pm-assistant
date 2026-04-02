@@ -1,6 +1,7 @@
 # Triage — 005-Brainstorming-CG-Thinking
 
 Source: `work/inputs/005-Brainstorming-CG-Thinking.md`
+Source type: brainstorm
 Applicable scaffolds: `tpl-doc-overview.md`, `tpl-doc-spec.md`, `tpl-doc-architecture.md`
 Pass 1 completed: 02.04.2026
 Status: AWAITING REVIEW

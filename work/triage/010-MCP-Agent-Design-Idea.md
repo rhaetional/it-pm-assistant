@@ -1,6 +1,7 @@
 # Triage — 010-MCP-Agent-Design-Idea
 
 Source: `work/inputs/010-MCP-Agent-Design-Idea.md`
+Source type: brainstorm
 Applicable scaffolds: `tpl-doc-spec.md`, `tpl-doc-architecture.md`, `tpl-doc-system-api.md`
 Pass 1 completed: 03.04.2026
 Status: AWAITING REVIEW

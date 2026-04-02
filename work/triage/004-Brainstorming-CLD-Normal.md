@@ -1,6 +1,7 @@
 # Triage — 004-Brainstorming-CLD-Normal
 
 Source: `work/inputs/004-Brainstorming-CLD-Normal.md`
+Source type: brainstorm
 Applicable scaffolds: `tpl-doc-spec.md`, `tpl-doc-architecture.md`
 Pass 1 completed: 02.04.2026
 Status: AWAITING REVIEW

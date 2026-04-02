@@ -1,6 +1,7 @@
 # Triage — 011-Atlassian-API
 
 Source: `work/inputs/011-Atlassian-API.md`
+Source type: brainstorm
 Applicable scaffolds: `tpl-doc-architecture.md`, `tpl-doc-system-api.md`
 Pass 1 completed: 03.04.2026
 Status: AWAITING REVIEW

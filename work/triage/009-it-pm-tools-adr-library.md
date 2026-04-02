@@ -1,6 +1,7 @@
 # Triage — 009-it-pm-tools-adr-library
 
 Source: `work/inputs/009-it-pm-tools-adr-library.zip` (extracted: 001-repo-layout.md, 002-branching-convention.md, 003-jira-project-and-isolation.md, 004-servicenow-ingest.md)
+Source type: formal-design
 Applicable scaffolds: `tpl-doc-architecture.md`, `tpl-doc-spec.md`, `tpl-doc-system-datamodel.md`
 Pass 1 completed: 02.04.2026
 Status: AWAITING REVIEW

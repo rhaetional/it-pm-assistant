@@ -1,6 +1,7 @@
 # Triage — 002-DESIGN-jira-confluence-snow-integration
 
 Source: `work/inputs/002-DESIGN-jira-confluence-snow-integration.md`
+Source type: formal-design
 Applicable scaffolds: `tpl-doc-spec.md`, `tpl-doc-architecture.md`
 Pass 1 completed: 02.04.2026
 Status: AWAITING REVIEW

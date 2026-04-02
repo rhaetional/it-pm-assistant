@@ -1,6 +1,7 @@
 # Triage — 006-Brainstorming-CG-Normal
 
 Source: `work/inputs/006-Brainstorming-CG-Normal.md`
+Source type: brainstorm
 Applicable scaffolds: `tpl-doc-overview.md`, `tpl-doc-spec.md`, `tpl-doc-architecture.md`
 Pass 1 completed: 02.04.2026
 Status: AWAITING REVIEW
