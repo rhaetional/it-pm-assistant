@@ -4,7 +4,7 @@
      framework/ in the consumer repo. scaffold/ is at framework/scaffold/. -->
 
 ## Purpose
-<!-- TODO: one sentence — mirrors Guiding Star in framework/STRATEGY.md -->
+<!-- Defined in the consumer repo's root CLAUDE.md. Add it there if missing. -->
 
 ## File Map
 ```

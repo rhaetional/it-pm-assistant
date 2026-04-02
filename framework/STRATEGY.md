@@ -2,9 +2,6 @@
 <!-- Process governance: how documents are created, not what they contain. Agent instructions: framework/CLAUDE.md. -->
 <!-- Path note: all paths below (doc/, decisions/, work/, manual/) are relative to the instance repo root, not to framework/. -->
 
-## Guiding Star
-<!-- TODO: one paragraph — what is this system, who is its primary user, what is the key outcome? Every document and decision derives from this. -->
-
 ## Document Hierarchy
 Strict dependency order. Predecessor must be LOCKED before derivative begins.
 ```
