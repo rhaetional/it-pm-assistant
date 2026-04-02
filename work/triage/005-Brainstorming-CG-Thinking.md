@@ -1,7 +1,9 @@
-# Triage — Pass 1
-<!-- Source: work/inputs/005-Brainstorming-CG-Thinking.md -->
-<!-- Date: 02.04.2026 -->
-<!-- Applicable scaffolds: tpl-doc-overview.md, tpl-doc-spec.md, tpl-doc-architecture.md -->
+# Triage — 005-Brainstorming-CG-Thinking
+
+Source: `work/inputs/005-Brainstorming-CG-Thinking.md`
+Applicable scaffolds: `tpl-doc-overview.md`, `tpl-doc-spec.md`, `tpl-doc-architecture.md`
+Pass 1 completed: 02.04.2026
+Status: AWAITING REVIEW
 
 ## Classification Table
 

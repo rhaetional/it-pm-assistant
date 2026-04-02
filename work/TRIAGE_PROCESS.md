@@ -41,6 +41,25 @@ For each item, assign one classification:
 | D | **Gap** — required by the scaffold template but absent from this source |
 | E | **Contradiction** — conflicts with another claim within this file |
 
+### Header
+
+Every triage file must open with this header, immediately followed by `---`:
+
+```
+# Triage — {NNN-filename-stem}
+
+Source: `work/inputs/{NNN-filename}.md`
+Applicable scaffolds: `tpl-doc-foo.md`, `tpl-doc-bar.md`
+Pass 1 completed: DD.MM.YYYY
+Status: AWAITING REVIEW
+```
+
+- **Title** — use the full input filename stem (e.g. `001-Inferred-ServiceNow-Structure`).
+- **Source** — exact relative path to the input file; preserves provenance for Pass 2.
+- **Applicable scaffolds** — one or more `tpl-*.md` names from `framework/scaffold/`; determines which gap rows are relevant.
+- **Pass 1 completed** — date in DD.MM.YYYY format; add a `Pass 2 completed:` line in place when Pass 2 runs.
+- **Status** — `AWAITING REVIEW` until the human review checkpoint clears; then `REVIEWED` or `PASS 2 COMPLETE`.
+
 ### Output
 
 Write `work/triage/NNN-*.md` (NNN mirrors the input file number).

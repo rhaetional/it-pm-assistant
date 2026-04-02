@@ -1,8 +1,9 @@
-# Triage — 003-Brainstorming-CLD-Extended.md
+# Triage — 003-Brainstorming-CLD-Extended
 
-**Pass 1 completed:** 02.04.2026
-**Target templates:** `tpl-doc-spec.md`, `tpl-doc-architecture.md`
-**Status:** Awaiting human review before Pass 2.
+Source: `work/inputs/003-Brainstorming-CLD-Extended.md`
+Applicable scaffolds: `tpl-doc-spec.md`, `tpl-doc-architecture.md`
+Pass 1 completed: 02.04.2026
+Status: AWAITING REVIEW
 
 ---
 
